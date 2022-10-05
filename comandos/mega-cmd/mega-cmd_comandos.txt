@@ -1,0 +1,20 @@
+#!/bin/bash
+# Comandos MEGA-cli
+# Estos son los comandos basicos para ejecutar desde terminal
+# Date: 06-AGO-2022
+# Author: glow
+# Bibliografia: mega-cmd -help
+
+ls              Listar directorio
+logout          Cerrar sesion
+login           Iniciar sesion
+whoami          Conocer el nombre de la cuenta actual
+mkdir           Crear directorio
+rm              Borrar fichero/directorio
+cd ..           Cambiar de  directorio
+export          Crear enlace de descarga
+get             Descargar un archivo
+import          Subir un archivo
+put -c          Subir archivo, (-c crear el dir, si no esta creado)
+signup          namemail@mail.com password --name="account_name" create account
+confirm         "url" "your_password"
