@@ -8,7 +8,7 @@
 
 clear
 opcion=0
-echo -e "\n\e[38:5:82mCALCULO DE EDAD\e[0m"
+echo -e "\n\e[38:5:82mCALCULO DE EDAD\n\e[0m"
 while [ $opcion -ne 2 ]; do
     
     echo -e "\e[38:5:39m1) Calcular edad\e[0m"
@@ -16,7 +16,7 @@ while [ $opcion -ne 2 ]; do
     echo -ne "\e[38:5:87mElija una opcion: \e[0m"
     read  opcion
     case $opcion in
-        1) echo -e "\n\e[38:5:93mCalculando edad...\e[0m"
+        1) echo -e "\n\e[38:5:93mCalculando edad...\e[0m\n"
             echo -en "\e[38:5:99mIngrese el año de nacimiento [ Ejemplo: 2022 ]: \e[0m"
             read year
             echo -en "\e[38:5:105mIngrese el mes de nacimiento [ Ejemplo: Septiembre = 09 ]: \e[0m"
@@ -46,7 +46,7 @@ while [ $opcion -ne 2 ]; do
                 fday=`expr $day_act - $day`
             fi
             
-            echo -e "\e[38:5:123mTienes\e[0m \e[38:5:201m$fyear\e[0m \e[38:5:123maños,\e[0m \e[38:5:201m$fmonth\e[0m \e[38:5:123mmeses\e[0m, \e[38:5:201m$fday\e[0m \e[38:5:123mdias de edad.\e[0m"
+            echo -e "\e[38:5:123mTienes\e[0m \e[38:5:201m$fyear\e[0m \e[38:5:123maños,\e[0m \e[38:5:201m$fmonth\e[0m \e[38:5:123mmeses\e[0m, \e[38:5:201m$fday\e[0m \e[38:5:123mdias de edad.\e[0m\n"
             
             if [ $fyear -ge 18 ]
             then
