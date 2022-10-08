@@ -1,0 +1,52 @@
+# EDICION DE CONFIGURACION GLOBAL
+# poner numeros de lineas cada vez que abres un archivo
+# modificar el archivo de la siguiente direccion "etc/nano/nanorc"
+# con ctl+w abrir el buscador y poner "set linenumber"
+# quitar el comentario "#" y quedara listo.
+#---------------------------------------------------------------------------
+
+#CONFIG PARA USUARIO COPIAR ESTE ARCHIVO EN /HOME/USUARIO/.nanorc
+# configfuracion del editor nano colores, numeros de lineas, color del status bar,etc. y otras funciones.
+# colores que se pueden ocupar (red, green, blue, magenta, yellow, cyan, whitey black)
+# anteponiendo la palabra "light" para obtener una versión más brillante (lightblack).
+# anteponiendo la palabra "bright" para que el texto aparesca en negrita.
+# para instalar un autocorrector ejecutamos "sudo apt install nano aspell-es" y "sudo apt update" y agregar el comando set speller
+#set speller "aspell -x -c" (revisar funcionamiento)
+set linenumbers
+set spotlightcolor black,magenta
+set autoindent
+#set mouse
+set tabsize 4
+set titlecolor white
+set numbercolor lightwhite
+set keycolor white
+set statuscolor white
+set functioncolor magenta
+set breaklonglines
+set constantshow
+set selectedcolor black,lightblack
+#set brackets " "')>]} " (revisar funcionamiento)
+#set smooth (revisar funcionamiento)
+
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/python.nanorc
+include /usr/share/nano/c.nanorc
+include /usr/share/nano/css.nanorc
+include /usr/share/nano/email.nanorc
+include /usr/share/nano/go.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/java.nanorc
+include /usr/share/nano/javascript.nanorc
+include /usr/share/json.nanorc
+include /usr/share/nano/lua.nanorc
+include /usr/share/nano/markdown.nanorc
+include /usr/share/nano/nanorc.nanorc
+include /usr/share/nano/perl.nanorc
+include /usr/share/nano/php.nanorc
+include /usr/share/nano/ruby.nanorc
+include /usr/share/nano/rust.nanorc
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/sql.nanorc
+include /usr/share/nano/tex.nanorc
+include /usr/share/nano/textinfo.nanorc
+include /usr/share/nano/xml.nanorc

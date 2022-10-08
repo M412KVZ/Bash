@@ -539,7 +539,11 @@ select Menu in "Automatic Install" "Custom Install"
         esac
     done
 #instalar
+#    Actualizar sudo (¡¡¡IMPORTANTE!!!)
 #    terminal
+#        tree
+#            sirve para listar los documentos en forma de arbol
+#            sudo apt-get install tree
 #        wget (Pendiente)
 #            Wget es una herramienta que nos permitirá la descarga de contenido que provienen de servidores web bajo protocolos 
 #            como ftp o https. Para la gestión de estas descargas nos encontraremos con un comando que permite descargar fácilmente 
@@ -657,80 +661,3 @@ select Menu in "Automatic Install" "Custom Install"
 #            themas
 #            cursores
 #            iconos
-#------------------------------------------
-# ---zsh configuracion---
-#alias zc="nano ~/.zshrc"
-#alias sz="source ~/.zshrc"
-# ---terminal---
-#alias l="lsd -l"
-#alias ll="lsd -la"
-#alias hd="history -c"
-#alias up="sudo apt-get update && sudo apt-get upgrade"
-#alias aut="sudo apt autoremove"
-#alias cl="sudo apt autoclean && sudo apt autoremove"
-#alias mkt="mkdir content exploit nmap"
-# ---limpieza de cabezales---
-#alias lcab="sudo escputil -c -u -r /dev/usb/lp0"
-# ---transmission---
-#alias torrent="transmission-cli"
-#	example "transmission-cli file.torrent"
-#	example "transmission-cli "mangetlink.magnet" "
-# ---alias mega---
-#alias ml="mega-ls"
-#alias mt="mega-tree"
-#alias mll="mega-ls -lah"
-#alias mla="mega-ls -lah"
-#alias mli="mega-login"
-#alias mlo="mega-logout"
-#alias mcd="mega-cd"
-#alias mrm="mega-rm"
-#alias mup="mega-put -c"
-#alias mmk="mega-mkdir"
-#alias mex="mega-export"
-#alias mim="mega-import"
-#alias mwi="mega-whoami"
-#alias mdo="mega-get"
-#alias mpw="mega-pwd"
-# ---alias Git---
-#alias gst="git status"
-#alias gpl="git pull"
-#alias gph="git push"
-#alias gc="git clone"
-# ---firejail---
-#alias j="firejail"
-#alias jf="firejail firefox"
-#alias jz="firejail zathura"
-#alias jv="firejail vlc"
-# ---zathura pdf---
-#alias pdf="zathura"
-# 	Ctl + r "modo obscuro"
-# ---bat---
-#alias bat="batcat"
-# ---metadata---
-# identify "image.jpg"
-# exiftool "image.png"
-#	example "exiftool -all= imagen.jpg"
-#	example to add gps "exiftool -exif:gpslatitude=»21.30″ -exif:gpslatituderef=S -exif:gpslongitude=»165.30″ -exif:gpslongituderef=E  image.png"
-#---ytmdl---
-#alias yt="ytmdl"
-#	example ytmdl "name_song"
-#	example ytmdl "name_song" by "author"
-# ---youtube-dl
-# alias ytd="youtube-dl"
-# ---trash-cli---
-#	trash-put           trash files and directories.
-#	trash-empty         empty the trashcan(s).
-#	trash-list          list trashed files.
-#	trash-restore       restore a trashed file.
-#	trash-rm	     remove individual files from the trashcan.
-#alias tsh="trash"
-#alias tshl="trash-list"
-#alias tshe="trash-empty"
-#alias tshr="trash-restore"
-#alias tshm="trash-rm"
-# ---gh eco---
-# gh auth login
-# gh auth logout
-#alias gli="gh auth login"
-#alias glo="gh auth logout"
-#alias ge="gh eco"
